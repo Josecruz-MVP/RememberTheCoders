@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'vision_app.apps.Vison_appConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
