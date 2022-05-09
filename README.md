@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ### 4. Run Django
 
 ```
-python manage.py runserver
+python manage.py runserver 
 ```
 
 And go to `http://localhost:8000`
