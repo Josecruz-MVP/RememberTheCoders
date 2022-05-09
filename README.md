@@ -23,26 +23,68 @@ Each member collaborated on the wireframe, which is a visual guide representing 
 -   This Diagram outline **1 one-to-many** and **1 many-to-many** entity relationships.
 
 
-# 1. Get set up for Django
+## Usage and instructions to start building this project 📖 :
+To use this application you will need use the terminal. You can use Powershell or Bash
+ 1. Create a virtual environment
 
-* First, lets setup our virtual environment and server to run the app 
-- Run `python3 -m venv venv` (or whichever version of this your computer uses) to create a new virtual environment (it's common practice to name your virtual environment 'venv')
-- Run `source django-env/bin/activate` on Unix/MacOS or `django-env\Scripts\activate.bat` on Windows to activate the virtual environment (or whichever instruction works for you!)
-- Run `pip install django` to install Django
+At the root folder of the repository run:
 
-## Run the Django Server
+```
+python3 -m venv venv
+```
 
-Use the `manage.py` file to run the server!
+Make sure to call your virtual environment **"venv"**
+
+### 2. Run virtual environment
+
+### On Windows:
+
+Windows Powershell users:
+
+```
+venv\Scripts\activate.bat
+#or
+venv\Scripts\Activate.ps1
+```
+
+Bash users:
+
+```
+source venv/Scripts/activate
+```
+
+#### On Unix or MacOS:
+
+```
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 4. Run Django
 
 ```
 python manage.py runserver
+```
 
-- Go to `localhost:8000` and you should see the app home screen!
-
-
-
+And go to `http://localhost:8000`
 
 
+## Built With
+
+![html](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&logoWidth=30)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white)
+![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
-
+<br>
+&copy; 2022 Jose Cruz, Shaquille Roberts, Harbir Parmar & Jermaine Bailey| All Rights Reserved
