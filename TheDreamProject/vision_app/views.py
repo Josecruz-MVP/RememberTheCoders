@@ -8,3 +8,7 @@ from django.views import View
 class Homepage(View):
     def get(self, request):
         return render(request, 'home.html')
+
+class Addvision(View):
+    def get(self, request):
+        return render(request, 'add_vision.html')
