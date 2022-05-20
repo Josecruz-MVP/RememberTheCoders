@@ -39,7 +39,7 @@ body, html {
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       
-      <a href="#getting started" class="w3-bar-item w3-button"></i>GETTING STARTED</a>
+      <a href="{% url 'AddVision' %}" class="w3-bar-item w3-button"></i>GETTING STARTED</a>
       
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -54,7 +54,7 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#getting started" onclick="w3_close()" class="w3-bar-item w3-button">GETTING STARTED</a>
+  <a href="{% url 'AddVision' %}" onclick="w3_close()" class="w3-bar-item w3-button">GETTING STARTED</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -100,7 +100,7 @@ body, html {
       <h3>Let's get started.</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
 <!-- Url needed for this button -->
-      <p><a href="#getting started" class="w3-button w3-black"><i class="fa fa-th"> </i> Get Started</a></p>
+      <p><a href="{% url 'AddVision' %}" class="w3-button w3-black w3-round"><i class=""> </i> Get Started</a></p>
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large" src="https://quotefancy.com/media/wallpaper/1600x900/1462950-Annika-Sorenstam-Quote-There-are-no-shortcuts-to-success.jpg" alt="Buildings" width="700" height="394">
@@ -135,7 +135,7 @@ body, html {
          <span class="w3-opacity">Get Started Below</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Get Started</button>
+          <p><a href="{% url 'AddVision' %}" class="w3-button w3-black w3-round"><i class=""> </i> Get Started</a></p>
         </li>
       </ul>
     </div>
@@ -153,7 +153,7 @@ body, html {
           <span class="w3-opacity">Get Started Below</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Get Started</button>
+          <p><a href="{% url 'AddVision' %}" class="w3-button w3-black w3-round"><i class=""> </i> Get Started</a></p>
         </li>
       </ul>
     </div>
@@ -170,7 +170,7 @@ body, html {
           <span class="w3-opacity">Get Started Below</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Get Started</button>
+          <p><a href="{% url 'AddVision' %}" class="w3-button w3-black w3-round"><i class=""> </i> Get Started</a></p>
         </li>
       </ul>
     </div>
@@ -181,7 +181,7 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-32">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey w3-round"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <h4>Copyright 2022 The Dream Project</h4>
   <p>Powered by <a href="https://github.com/Josecruz-MVP/RememberTheCoders" target="_blank">Remember The Coders</a></p>
   
