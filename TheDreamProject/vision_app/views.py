@@ -1,11 +1,12 @@
 
 # Create your views here.
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import View
 
 #from django.views import Task
 from vision_app.models import Vision,Goal,Task
 from django.views.generic.list import ListView
+from vision_app.forms import VisionForm
 
 class VisionListView(ListView):
 
@@ -47,6 +48,16 @@ class Homepage(View):
 class Addvision(View):
     def get(self, request):
         return render(request, 'add_vision.html')
+    
+    def post(self,request):
+       if 'save_vision' in request.POST:
+        Vision_Form = VisionForm(request.POST)
+        print(Vision_Form.is_valid())
+        if Vision_Form.is_valid():
+          Vision_Form.save()
+        return render(request,'add_vision.html')
+
+
 
 class AddGoalTask(View): 
     def get(self, request):
