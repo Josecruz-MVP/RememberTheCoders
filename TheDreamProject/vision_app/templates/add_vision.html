@@ -82,16 +82,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
   
 <!-- Django forms go here --> <!--action="" method="{POST}"-->
-      <form class="w3-container w3-center" class="w3-container w3-center" method = "POST">
+      <form action="{% url 'AddVision'%}" class="w3-container w3-center" class="w3-container w3-center" method = "POST">
        {% csrf_token %} 
-       {{Vision_Form}}
+       
 
         <label class="w3-text-black"><b>What is your vision?</b></label>
-        <input type="text" name ="save_vision" class="w3-input w3-border w3-center" >
+        {{ Vision_Form }}
         <input type="submit" class="w3-input w3-border w3-center" >
-      
-      
-       
+
       </form>
 <!-- Django forms go here -->
   </div>

@@ -1,15 +1,14 @@
-
-# Create your views here.
-from django.shortcuts import render, redirect
+#Create your views here.
+from django.shortcuts import render
 from django.views import View
 
-#from django.views import Task
-from vision_app.models import Vision,Goal,Task
 from django.views.generic.list import ListView
-from vision_app.forms import VisionForm
 
+from .forms import VisionForm
+from .models import Vision,Goal,Task
+
+# Create your views here.
 class VisionListView(ListView):
-
     model = Vision
     paginate_by = 100  # if pagination is desired
 
@@ -39,25 +38,21 @@ class TaskListView(ListView):
         return context
 
 
-
-# Create your views here.
 class Homepage(View):
     def get(self, request):
         return render(request, 'home.html')
 
 class Addvision(View):
     def get(self, request):
-        return render(request, 'add_vision.html')
-    
+        Vision_Form = VisionForm()
+        return render(request, 'add_vision.html',{
+                'Vision_Form' : Vision_Form,
+            })
     def post(self,request):
-       if 'save_vision' in request.POST:
+        '''POST the data in the form submitted by the user, creating a new task in the todo list'''
         Vision_Form = VisionForm(request.POST)
-        print(Vision_Form.is_valid())
-        if Vision_Form.is_valid():
-          Vision_Form.save()
+        Vision_Form.save()
         return render(request,'add_vision.html')
-
-
 
 class AddGoalTask(View): 
     def get(self, request):
