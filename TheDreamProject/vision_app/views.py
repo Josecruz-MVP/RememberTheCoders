@@ -4,7 +4,7 @@ from django.views import View
 
 from django.views.generic.list import ListView
 
-from .forms import VisionForm
+from .forms import VisionForm,GoalForm, TaskForm
 from .models import Vision,Goal,Task
 
 # Create your views here.
@@ -56,6 +56,8 @@ class Addvision(View):
 
 class AddGoalTask(View): 
     def get(self, request):
+        Goal_Form = GoalForm()
+        Task_Form = TaskForm()
         return render(request, 'addgoaltask.html',{
                 '   Goal_Form' : Goal_Form,
             },{
