@@ -73,12 +73,26 @@
     <h3 class="w3-center">Add Goals and Task</h3>
     <hr>
   <!-- Django forms go here -->   <!-- action="" method="{POST}" -->
-  <form action="" class="w3-container w3-center" method = "POST">
+<form action="{% url 'AddGoalTask'%}" class="w3-container w3-center" method = "POST">
     {% csrf_token %} 
      <label class="w3-text-black"><b></b></label>
-    {{ Vision_Form }}
-     <input type="submit" class=" w3-btn w3-border w3-center w3-orange w3-round" >
+    {{ Goal_Form }}
+     <input type="submit" name="add_goal" value="Create" class=" w3-btn w3-border w3-center w3-orange w3-round" >
  </form>
+<br>
+ <form action="{% url 'AddGoalTask'%}" class="w3-container w3-center" method = "POST">
+  {% csrf_token %} 
+   <label class="w3-text-black"><b></b></label>
+  {{ Task_Form }}
+   <input type="submit" name="add_task" value="Create" class=" w3-btn w3-border w3-center w3-orange w3-round" >
+</form>
+<br>
+<form action="{% url 'AddGoalTask'%}" class="w3-container w3-center" method = "POST">
+  {% csrf_token %} 
+   <label class="w3-text-black"><b></b></label>
+  {{ Task_Form }}
+   <input type="submit" name="add_task" value="Create" class=" w3-btn w3-border w3-center w3-orange w3-round" >
+</form>
   <!-- Django forms go here -->
     <br>
   <!-- URL needed here -->
