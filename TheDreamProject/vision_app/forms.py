@@ -23,7 +23,7 @@ class GoalForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['goal_name'].label = ''
+        self.fields['goal_name, vision_id '].label = ''
 
 class TaskForm(forms.ModelForm):
     class Meta:
