@@ -3,6 +3,7 @@ All the forms are here
 """
 
 from django import forms
+
 from .models import Vision, Goal, Task
 
 class VisionForm(forms.ModelForm):
