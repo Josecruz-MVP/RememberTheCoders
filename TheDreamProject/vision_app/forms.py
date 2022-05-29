@@ -16,7 +16,6 @@ class VisionForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.fields['vision_name'].label = ''
 
-
 class GoalForm(forms.ModelForm):
     class Meta:
         model = Goal

@@ -73,35 +73,23 @@
     <h3 class="w3-center">Add Goals and Task</h3>
     <hr>
   <!-- Django forms go here -->   <!-- action="" method="{POST}" -->
-    <form>
-      <div class="w3-section w3-center w3-large">
-        <label>Goal</label>
-        <input class="w3-input w3-border w3-round" type="text" required name="Name">
-      </div>
-      <div class="w3-section w3-center w3-large">
-        <label>Task</label>
-        <input class="w3-input w3-border w3-round" type="text" required name="Email">
-      </div>
-      <div class="w3-section w3-center w3-large">
-        <label>Task</label>
-        <input class="w3-input w3-border w3-round" required name="Message">
-      </div>
-      
-      <br>
-      <div>
-        <button class="w3-btn w3-orange w3-round w3-left w3-margin-left " type="submit" name="submit" value="Create" >Add Another Goal</button>
-        <button class="w3-btn w3-orange w3-round w3-right w3-margin-right " type="submit" name="submit" value="Create" >Submit</button>
-    </div>
-      <br>
-    </form>
+  <form action="" class="w3-container w3-center" method = "POST">
+    {% csrf_token %} 
+     <label class="w3-text-black"><b></b></label>
+    {{ Vision_Form }}
+     <input type="submit" class=" w3-btn w3-border w3-center w3-orange w3-round" >
+ </form>
   <!-- Django forms go here -->
     <br>
   <!-- URL needed here -->
-    <p class="w3-center w3-large">Back to <a href="{% url 'Home' %}" target="_blank" class="w3-hover-text-orange w3-center">home page</a></p>
+    <p class="w3-center w3-large">Back to <a href="{% url 'AddVision' %}" target="_blank" class="w3-hover-text-orange w3-center">Add Vision</a></p>
   </div>
 
 <!-- End page content -->
 </div>
 
 </body>
+
 </html>
+
+
