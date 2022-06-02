@@ -31,9 +31,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <div class="w3-container w3-text-teal">
           <h2 class="w3-text teal">The Dream Project</h2>
           <h4>Dashboard</h4>
-          <p><i class="w3-margin-right w3-large"></i>Vision</p>
-          <p><i class="w3-margin-right w3-large"></i>Goals</p>
-          <p><i class="w3-margin-right w3-large"></i>Tasks</p>
+          <p><a href="{% url 'Home' %}" target="_blank">Home</a></p>
+          <p><a href="{% url 'AddVision' %}" target="_blank">Vision</a></p>
+          <p><a href="{% url 'AddGoalTask' %}" target="_blank">Goal and Tasks</a></p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Vision</b></p>
@@ -63,8 +63,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <h1 class="w3-text-grey w3-padding-16"><i class="w3-margin-right"></i>Vision</h1>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Graduate JTC</b></h5>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="submit" value="Create" >Update</button>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="submit" value="Delete" >Delete</button><br>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_vision" value="Create" >Update</button>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Vision Data Here -->
           <p>A description of the vision goes here.</p>
@@ -72,8 +72,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>If the user has another vision it will go here.</b></h5>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="submit" value="Create" >Update</button>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="submit" value="Delete" >Delete</button><br>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_vision" value="Create" >Update</button>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Vision Data Here -->
           <p>A description of the vision goes here.</p>
@@ -81,8 +81,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Another vision</b></h5>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="submit" value="Create" >Update</button>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="submit" value="Delete" >Delete</button><br>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_vision" value="Create" >Update</button>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Vision Data Here -->
           <p>A description of the vision goes here. </p><br>
@@ -95,7 +95,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <h1 class="w3-text-grey w3-padding-16"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Goals</h1>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Finish Project</b></h5>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="submit" value="Create" >Update</button>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_goal" value="Create" >Update</button>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="submit" value="Delete" >Delete</button><br>
       <br>
       <!--Render Goals Data Here -->
@@ -104,8 +104,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Another goal goes here</b></h5>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="submit" value="Create" >Update</button>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="submit" value="Delete" >Delete</button><br>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_goal" value="Create" >Update</button>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Goals Data Here -->
           <p>Master Degree</p>
@@ -113,8 +113,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Goal goes here</b></h5>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="submit" value="Create" >Update</button>
-          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="submit" value="Delete" >Delete</button><br>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_goal" value="Create" >Update</button>
+          <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Goals Data Here -->
           <p>Bachelor Degree</p><br>
