@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>Add Goals and Task</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -27,7 +27,7 @@
 <!-- Navbar (sit on top) -->
 
 <!-- Render vision data in this container  -->
-<div class="w3-content w3-container w3-padding-64 w3-animate-zoom" id="about">
+<div class="w3-content w3-container w3-padding-64 w3-animate-zoom" style="max-width:80%" id="about">
 
   <hr>
   
@@ -35,20 +35,18 @@
   <div class="w3-row w3-padding-64" id="menu">
     <div class="w3-col l6 w3-padding-large">
       <h1 class="w3-center">Goals and Tasks</h1><br>
-      <h4 class="w3-text-orange">Goal caption</h4>
-      <p class="w3-text-teal">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+      <h4 class="">Spiritual Goals:</h4>
+      <p class="">If you’re hoping to find greater spiritual understanding and contentment, include images that evoke the kind of spiritual enlightenment you seek. </p><br>
     
-      <h4 class="w3-text-orange">Goal caption</h4>
-      <p class="w3-text-teal">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+      <h4 class="">Health Goals:</h4>
+      <p class="">Health goals commonly have to do with weight loss, your health is also about integrating self-care into your life, staying on top of your mental health, and getting adequate sleep. Maintaining optimal health isn’t only good for your well-being, it also affects your ability to achieve your other goals.</p><br>
     
-      <h4 class="w3-text-orange">Goal caption</h4>
-      <p class="w3-text-teal">Vanilla flavored batter with malted flour 7.50</p><br>
+      <h4 class="">Financial Goals:</h4>
+      <p class="">If you are hoping to attract more money into your life, you may want to include a savings plan and budget for cash goals or the items you would like to buy with that money (such as your own home, a car, an e-bike etc.).</p><br>
     
-      <h4 class="w3-text-orange">Goal caption</h4>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
     
-      <h4>Goal caption</h4>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+      <h4>Task</h4>
+      <p class="w3-text-grey">Task caption goes here</p>    
     </div>
     
     <div class="w3-col l6 w3-padding-large w3-round">
@@ -61,7 +59,12 @@
 
   <!-- Render Vision data here -->
   <h3 class="w3-center">render vision data here</h3>
-  <p class="w3-center"><em>Now that you have created your vision now let's create goals and task.</em></p>
+  <ul>
+    {% for vision in visionname %}
+  <li>{{ vision.vision_name }}</li>
+    {% endfor %}
+  </ul>
+  <p class="w3-center"><em>"Now that you have created your vision now let's create goals and task."</em></p>
   <p class="w3-center"></p>
 </div>
 
