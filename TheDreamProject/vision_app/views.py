@@ -28,8 +28,6 @@ class Addvision(View):
     def post(self,request):
         '''POST the data in the form submitted by the user, creating a new task in the todo list'''
         Vision_Form = VisionForm(request.POST)
-        if form.is_valid():
-            name_vision = form.cleaned_data{'post'}
         Vision_Form.save()
         return render(request,'add_vision.html')  
 
@@ -37,7 +35,7 @@ class Addvision(View):
 '''Vision'''
 class VisionListView(ListView):
     model: Vision
-    def get(self, request):
+    def get(self, request,):
          vision = Vision.objects.all()
          form = VisionForm()
         
