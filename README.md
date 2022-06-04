@@ -36,10 +36,12 @@ Our first page is the registration page slash login page for new and current use
 <img width="880" alt="Screen Shot 2022-06-03 at 10 52 49 PM" src="https://user-images.githubusercontent.com/98856246/171976654-ce372dc0-7edd-4d07-bea8-eaa4ef3d24b2.png">
 
 
-
-
-
 -   This Diagram outline **1 one-to-many** and **1 many-to-many** entity relationships.
+
+
+## WEBSITE VISUALS
+
+<img width="897" alt="Screen Shot 2022-06-04 at 12 06 43 AM" src="https://user-images.githubusercontent.com/98856246/171981953-36f6a293-6ed7-4751-8b6d-8209f7967f01.png">
 
 
 
