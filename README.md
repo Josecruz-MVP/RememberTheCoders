@@ -11,18 +11,34 @@
 
 Each member collaborated on the wireframe, which is a visual guide representing what our site will look like, and what features it will have and how the user will interact with the app.
 
-## 1-page written proposal
+![wireframe image](https://user-images.githubusercontent.com/98856246/171974663-1f9411cf-e709-4bd6-a25d-48d07dd85a74.jpg)
 
--   **Paragraph(s) 1-2:** A summary of your app's MVP functionality. The overall functionality employs **CRUD** (Create, Read, Update, Delete) operations:
-    -   **Create** - The app allows a user to create items in the database. E.g. when a user adds a todo item in the todo app, the todo item is added to the database.
-    -   **Read** - The app read items from a database. E.g. Displaying one or more todo items on a page in the todo app, the todo items are read from the database.
-    -   **Update** - The app must allow a user to update items in the database, E.g. when a user edits a todo item in the todo app and saves it, the todo item is updated in the database.
-    -   **Delete** - The app allows a user to delete items in the database. E.g. when a user removes a todo item in the todo app, the todo item is deleted from the database.
 
-## Proposal Part 2: Entity-Relationship Diagram Models
+# THE DREAM PROJECT
+We are proposing to create a web application that will help make your Dreams come true. We plan on keeping our web application simple to use, yet effective in helping individuals break down their visions into smaller goals and tasks they can work on daily. Consistency is key and we want to remind our users about the tasks through an easy to read dashboard. The web application also has a calendar which connects with google calendar so they can quickly view, prepare and organize their upcoming events. We also have included a checklist which the user can quickly refer to inorder to know what to work on specifically that day if they end up finishing a different task earlier than expected.
+ 
+
+Our project will allow users to create a vision they would like to start working on. They will then continue to create smaller goals that will lead to their vision. Afterwards they will focus on the tasks they need to work on all while being aware of the skill sets they are developing while motivating their efforts on the tasks. After the user has created, they will be able to read and review their visions. They will also be able to read their goals and tasks they have determined to be important. If the user decides something needs to be updated they will be allowed to edit their vision, goals and tasks accordingly. Lastly due to unforeseen circumstances the user decides they can no longer focus on a vision they are given the option to delete any of the user inputs.
+
+
+Our first page is the registration page slash login page for new and current users.Once logged in it would take you to our second page that has links that lead to our third page for you to input information about your vision and goals.The third page is were you would in put that information for it to be inserted in to our diagram for you to see your vision clearly.The fourth page shows you all your visions you have planned for yourself and will take you to the diagram that you have put together for that goal.Our fifth page has a diagram of your vision that is broken up into goals that you can drive for to achieve your vision.The diagram also provides you with tasks you need to complete on a daily baise for you to accomplish your goals.
+
+
+## Entity-Relationship Diagram Models
 
 -   The point of the ER Diagram is to map out visually what the database will look like.
+
+
+<img width="880" alt="Screen Shot 2022-06-03 at 10 52 49 PM" src="https://user-images.githubusercontent.com/98856246/171976654-ce372dc0-7edd-4d07-bea8-eaa4ef3d24b2.png">
+
+
+
+
+
 -   This Diagram outline **1 one-to-many** and **1 many-to-many** entity relationships.
+
+
+
 
 
 ## Usage and instructions to start building this project 📖 :
