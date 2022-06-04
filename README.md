@@ -2,9 +2,13 @@
 
 ![dreamproject](https://user-images.githubusercontent.com/98856246/171973663-676e45b4-0542-4401-a89f-19adbf4d8b23.jpeg)
 
- Welcome to our final project of the JTC course! This one is called "The Dream Project"
 
 ## Mission Staement 
+
+ Welcome to our final project of the JTC course! This one is called "The Dream Project"
+
+Our project will allow users to create a vision they would like to start working on. They will then continue to create smaller goals that will lead to their vision. Afterwards they will focus on the tasks they need to work on all while being aware of the skill sets they are developing while motivating their efforts on the tasks.
+
 
 
 ## The Dream Project Wireframe
