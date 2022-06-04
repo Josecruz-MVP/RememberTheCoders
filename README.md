@@ -1,6 +1,8 @@
 # RememberTheCoders
 
-Welcome to your final project of the JTC course! This one is called "The Dream Project"
+![dreamproject](https://user-images.githubusercontent.com/98856246/171973663-676e45b4-0542-4401-a89f-19adbf4d8b23.jpeg)
+
+ Welcome to our final project of the JTC course! This one is called "The Dream Project"
 
 ## Mission Staement 
 
