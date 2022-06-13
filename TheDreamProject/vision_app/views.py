@@ -70,7 +70,13 @@ class AddGoalTask(View):
         
         return render(request, 'addgoaltask.html',{
                 '   Goal_Form' : Goal_Form,
-            })       
+            })   
+
+    def post(self,request):
+        '''POST the data in the form submitted by the user, creating a new task in the todo list'''
+        Goal_Form = GoalForm(request.POST)
+        Goal_Form.save()
+        return render(request,'addgoaltask.html')     
     
    
 
