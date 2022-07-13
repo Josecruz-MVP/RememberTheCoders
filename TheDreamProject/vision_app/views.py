@@ -50,11 +50,12 @@ class VisionListView(ListView):
 
     def post(self, request):
         form = VisionForm(request.POST)
-        form.save()
+        # form.save()
 
         if form.is_valid():
               name_vision = form.cleaned_data['vision_name']
               Vision.objects.create(vision_name=name_vision)
+              
               
 
         return render(request, 'addgoaltask.html',{
@@ -70,19 +71,44 @@ class AddGoalTask(View):
         
         return render(request, 'addgoaltask.html',{
                 '   Goal_Form' : Goal_Form,
-            })       
+            }) 
+    def post(self,request):
+     
+        Goal_Form = GoalForm(request.POST)
+        Goal_Form.save()
+        return render(request,'addgoaltask.html')   
     
    
 
 #Goal list view here.
 class GoalListView(ListView):
-     model = Goal
-     paginate_by = 100  # if pagination is desired
+     model: Goal
+     def get(self, request,):
+             goal = Goal.objects.all()
+             form = GoalForm()
+        
+       
+             return render(
+             request=request,
+             template_name='dashboard.html',
+             context={'goalname': goal,
+             'goal_form' : form
+             }
+         )
 
-     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-      #  context['now'] = timezone.now()
-        return context
+     def post(self, request):
+        form = VisionForm(request.POST)
+        # form.save()
+
+        if form.is_valid():
+              goal_name = form.cleaned_data['goal_name']
+              Goal.objects.create(name_goal=goal_name)
+              
+              
+
+        return render(request, 'dashboard.html',{
+                'Goal_Form' : GoalForm,
+            })
 
 
 
