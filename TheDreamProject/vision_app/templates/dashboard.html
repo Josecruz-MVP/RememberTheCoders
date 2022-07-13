@@ -33,7 +33,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <h4>Dashboard</h4>
           <p><a href="{% url 'Home' %}" target="_blank">Home</a></p>
           <p><a href="{% url 'AddVision' %}" target="_blank">Vision</a></p>
-          <p><a href="{% url 'AddGoalTask' %}" target="_blank">Goal and Tasks</a></p>
+          <p><a href="{% url 'addgoaltaskview' %}" target="_blank">Goal and Tasks</a></p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Vision</b></p>
@@ -67,25 +67,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Vision Data Here -->
-          <p>A description of the vision goes here.</p>
+          <p>Complete all assignments required to pass.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>If the user has another vision it will go here.</b></h5>
+          <h5 class="w3-opacity"><b>Break into tech.</b></h5>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_vision" value="Create" >Update</button>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Vision Data Here -->
-          <p>A description of the vision goes here.</p>
+          <p>Study, study, study for that role, technical interviews, coding challenges and personal development.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Another vision</b></h5>
+          <h5 class="w3-opacity"><b>Health and Well Being.</b></h5>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_vision" value="Create" >Update</button>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Vision Data Here -->
-          <p>A description of the vision goes here. </p><br>
+          <p>Health and mental well being is a must. </p><br>
         </div>
       </div>
 
@@ -94,30 +94,30 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom w3-animate-left">
         <h1 class="w3-text-grey w3-padding-16"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Goals</h1>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Finish Project</b></h5>
+          <h5 class="w3-opacity"><b>Learn Python/Django</b></h5>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_goal" value="Create" >Update</button>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="submit" value="Delete" >Delete</button><br>
       <br>
       <!--Render Goals Data Here -->
-          <p>Render data from the Goal model on the screen here.</p>
+          <p>Complete assignments.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Another goal goes here</b></h5>
+          <h5 class="w3-opacity"><b>Become a Software Engineer</b></h5>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_goal" value="Create" >Update</button>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Goals Data Here -->
-          <p>Master Degree</p>
+          <p>Work hard and stay focused</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Goal goes here</b></h5>
+          <h5 class="w3-opacity"><b>To stay healthy mentally and physically.</b></h5>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal" type="submit" name="update_goal" value="Create" >Update</button>
           <button class="w3-btn w3-teal w3-round w3-left w3-teal w3-margin-left 50px" type="submit" name="delete" value="Delete" >Delete</button><br>
       <br>
       <!--Render Goals Data Here -->
-          <p>Bachelor Degree</p><br>
+          <p>Eat right sleep right.</p><br>
         </div>
       </div>
 
@@ -126,21 +126,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom w3-animate-bottom">
         <h1 class="w3-text-grey w3-padding-16"><i class="w3-margin-right"></i>Tasks</h1>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Task goes here</b></h5> 
+          <h5 class="w3-opacity"><b>Learn Documentation Python/Django</b></h5> 
       <!--Render Task Data Here -->
-          <p>Task description goes here</p>
+          <p>Read 10 pages daily</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Task goes here</b></h5>
+          <h5 class="w3-opacity"><b>Complete bootcamp</b></h5>
      <!--Render Task Data Here -->
-          <p>Task description goes here</p>
+          <p>Find a bootcamp and enroll</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Task goes here</b></h5>
+          <h5 class="w3-opacity"><b>Staying healthy</b></h5>
     <!--Render Task Data Here -->
-          <p>Task description goes here</p><br>
+          <p>Exercise 4 times a week - sleep 8 hours a night</p><br>
         </div>
       </div>
 

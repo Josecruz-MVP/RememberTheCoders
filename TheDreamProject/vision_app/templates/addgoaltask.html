@@ -45,8 +45,8 @@
       <p class="">If you are hoping to attract more money into your life, you may want to include a savings plan and budget for cash goals or the items you would like to buy with that money (such as your own home, a car, an e-bike etc.).</p><br>
     
     
-      <h4>Task</h4>
-      <p class="w3-text-grey">Task caption goes here</p>    
+      <!-- <h4>Task</h4>
+      <p class="w3-text-grey">Task caption goes here</p>     -->
     </div>
     
     <div class="w3-col l6 w3-padding-large w3-round">
@@ -59,9 +59,9 @@
 
   <!-- Render Vision data here -->
   <h3 class="w3-center">render vision data here</h3>
-  <ul>
+  <ul class="w3-center">
     {% for vision in visionname %}
-  <li>{{ vision.vision_name }}</li>
+       {{ vision.vision_name }}
     {% endfor %}
   </ul>
   <p class="w3-center"><em>"Now that you have created your vision now let's create goals and task."</em></p>
@@ -69,37 +69,37 @@
 </div>
 
   <!-- Goals and task Input Container -->
-  <div class="w3-content w3-padding-large w3-margin-top" id="goal_task_input">
+  <!-- <div class="w3-content w3-padding-large w3-margin-top" id="goal_task_input">
 
-  <!-- Goals and Task -->
-  <div class="w3-margin-top w3-animate-bottom " id="contact">
+  Goals and Task -->
+  <!-- <div class="w3-margin-top w3-animate-bottom " id="contact">
     <h3 class="w3-center">Add Goals and Task</h3>
     <hr>
-  <!-- Django forms go here -->   <!-- action="" method="{POST}" -->
-<form action="{% url 'AddGoalTask'%}" class="w3-container w3-center" method = "POST">
+   Django forms go here -->   <!-- action="" method="{POST}" -->
+<!-- <form action="{% url 'addgoaltaskview' %}" class="w3-container w3-center" method = "POST">
     {% csrf_token %} 
      <label class="w3-text-black"><b></b></label>
-    {{ Goal_Form }}
-     <input type="submit" name="add_goal" value="Create" class=" w3-btn w3-border w3-center w3-orange w3-round" >
- </form>
-<br>
- <form action="{% url 'AddGoalTask'%}" class="w3-container w3-center" method = "POST">
+    {{ goal_form }}
+     <input type="submit" name="create"  class=" w3-btn w3-border w3-center w3-orange w3-round" >
+ </form> --> 
+<!-- <br>
+ <form action="" class="w3-container w3-center" method = "POST">
   {% csrf_token %} 
    <label class="w3-text-black"><b></b></label>
   {{ Task_Form }}
-   <input type="submit" name="add_task" value="Create" class=" w3-btn w3-border w3-center w3-orange w3-round" >
+   <input type="submit" name="create" class=" w3-btn w3-border w3-center w3-orange w3-round" >
 </form>
 <br>
-<form action="{% url 'AddGoalTask'%}" class="w3-container w3-center" method = "POST">
+<form action="" class="w3-container w3-center" method = "POST">
   {% csrf_token %} 
    <label class="w3-text-black"><b></b></label>
   {{ Task_Form }}
-   <input type="submit" name="add_task" value="Create" class=" w3-btn w3-border w3-center w3-orange w3-round" >
-</form>
+   <input type="submit" name="create"  class=" w3-btn w3-border w3-center w3-orange w3-round" >
+</form> -->
   <!-- Django forms go here -->
     <br>
   <!-- URL needed here -->
-    <p class="w3-center w3-large">Back to <a href="{% url 'AddVision' %}" target="_blank" class="w3-hover-text-orange w3-center">Add Vision</a></p>
+    <p class="w3-center w3-large"><a href="{% url 'dashboard' %}" target="_blank" class="w3-hover-text-orange w3-center">Go to dashboard</a></p>
   </div>
 
 <!-- End page content -->
